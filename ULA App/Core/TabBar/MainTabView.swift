@@ -9,7 +9,46 @@ import SwiftUI
 
 struct MainTabView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            Text("Home")
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Home")
+                }
+            
+            Text("Calendar")
+                .tabItem { 
+                    Image(systemName: "calendar")
+                    Text("Calendar")
+                }
+            
+            Text("Find Us")
+                .tabItem {
+                    Image(systemName: "map")
+                    Text("Find Us")
+                }
+            
+            Text("Community")
+                .tabItem {
+                    Image(systemName: "magnifyingglass")
+                    Text("Community")
+                }
+            
+            Text("Profile")
+                .tabItem { 
+                    Image(systemName: "person")
+                    Text("Profile")
+                }
+            
+        }
+        
+        // tab bar color
+        .onAppear() {
+            UITabBar.appearance().backgroundColor = UIColor(Color.tealGreen)
+        }
+    
+        .accentColor(.white)
+
     }
 }
 
