@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
+    @State private var showingAlert = false
     
     var body: some View {
         NavigationStack {
@@ -94,18 +95,42 @@ struct LoginView: View {
                         Image("facebookLogo")
                             .resizable()
                             .frame(width: 20, height: 20)
-                        Text("Log In")
-                        
+                        Button(action:  {
+                            self.showingAlert = true
+                        }) {
+                            Text("Log in with Facebook")
+                                .foregroundColor(Color.tealGreen)
+                                .font(.footnote)
+                        }
                     }
+                    .alert(isPresented: $showingAlert) {
+                        Alert(title: Text("Feature Unavailable"),
+                              message: Text("This feature is temporarily unavailable. Please log in via email"),
+                              dismissButton: .default(Text("Got it!"))
+                        )
+                    }
+
                     Spacer()
                     
                     HStack {
                         Image("googleLogo")
                             .resizable()
                             .frame(width: 20, height: 20)
-                        Text("Log In")
-                        
+                        Button(action:  {
+                            self.showingAlert = true
+                        }) {
+                            Text("Log in with Google")
+                                .foregroundColor(Color.tealGreen)
+                                .font(.footnote)
+                        }
                     }
+                    .alert(isPresented: $showingAlert) {
+                        Alert(title: Text("Feature Unavailable"),
+                              message: Text("This feature is temporarily unavailable. Please log in via email"),
+                              dismissButton: .default(Text("Got it!"))
+                        )
+                    }
+                    
                     Spacer()
                 }
                 .font(.footnote)
