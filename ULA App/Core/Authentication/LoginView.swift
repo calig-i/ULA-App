@@ -19,7 +19,7 @@ struct LoginView: View {
             VStack {
                 Spacer()
                 // logo image
-                Image("ULALoginScreen")
+                Image("Logo")
                     .resizable()
                     .scaledToFill()
                     .frame(width: 120, height: 220)
@@ -56,9 +56,8 @@ struct LoginView: View {
                         .cornerRadius(10)
                     
                 }
-                
-                // forgot password button
                 .padding(.vertical)
+                // forgot password button
                 
                 Button {
                     print("Forgot passsword")
@@ -147,7 +146,8 @@ struct LoginView: View {
             
             // sign up button with navigation link
             NavigationLink {
-                Text("Sign up")
+                AddEmailView()
+                    .navigationBarBackButtonHidden(true)
             } label: {
                 HStack(spacing: 3) {
                     Text("Don't have an account?")

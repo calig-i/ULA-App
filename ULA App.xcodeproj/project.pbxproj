@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF6A28622BE8EBE10070D331 /* AddEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6A28612BE8EBE10070D331 /* AddEmailView.swift */; };
 		EFA094A22BE183BD00D908F0 /* ULA_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA094A12BE183BD00D908F0 /* ULA_AppApp.swift */; };
 		EFA094A42BE183BD00D908F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA094A32BE183BD00D908F0 /* ContentView.swift */; };
 		EFA094A62BE183BF00D908F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA094A52BE183BF00D908F0 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EF6A28612BE8EBE10070D331 /* AddEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmailView.swift; sourceTree = "<group>"; };
 		EFA0949E2BE183BD00D908F0 /* ULA App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ULA App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA094A12BE183BD00D908F0 /* ULA_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ULA_AppApp.swift; sourceTree = "<group>"; };
 		EFA094A32BE183BD00D908F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				EFE4468E2BE190DC00B9AF6F /* LoginView.swift */,
+				EF6A28612BE8EBE10070D331 /* AddEmailView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				EFA094A42BE183BD00D908F0 /* ContentView.swift in Sources */,
 				EFE4468D2BE18D2600B9AF6F /* Colors.swift in Sources */,
 				EFA094A22BE183BD00D908F0 /* ULA_AppApp.swift in Sources */,
+				EF6A28622BE8EBE10070D331 /* AddEmailView.swift in Sources */,
 				EFE4468F2BE190DC00B9AF6F /* LoginView.swift in Sources */,
 				EFE4468A2BE1879300B9AF6F /* MainTabView.swift in Sources */,
 			);
